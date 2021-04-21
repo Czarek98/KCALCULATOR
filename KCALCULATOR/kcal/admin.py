@@ -8,5 +8,7 @@ def make_accepted(modeladmin, request, queryset):
 class FoodAdmin(admin.ModelAdmin):
     list_display = ["id", "name", "status"]
     actions = [make_accepted]
+    list_filter = ["status"]
+    search_fields = ["name"]
     pass
 
