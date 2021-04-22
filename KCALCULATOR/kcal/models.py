@@ -8,7 +8,10 @@ IsAccepted_STATUS = (
     )
 )
 
+
 # Create your models here.
+
+
 class Food(models.Model):
     name = models.CharField(max_length=255)
     grams = models.FloatField(default=100.0)
@@ -23,8 +26,4 @@ class User(models.Model):
     firstname = models.CharField(max_length=20)
     lastname = models.CharField(max_length=20)
     kcalperday = models.FloatField()
-    #food = models.ForeignKey(Food, on_delete=models.CASCADE)
-
-
-
-
+    # food = models.ForeignKey(Food, on_delete=models.CASCADE)
