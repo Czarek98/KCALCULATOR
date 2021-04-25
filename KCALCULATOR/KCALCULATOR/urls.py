@@ -19,5 +19,6 @@ from django.contrib import admin
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('food/', include('kcal.urls'))
+    path('', include('kcal.urls')),
+    #path('home/', include('kcal.urls'))
 ]
