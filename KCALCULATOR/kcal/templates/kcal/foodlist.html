@@ -1,3 +1,10 @@
 {% extends "kcal/base.html" %}
 
-{% block content %}<h1> FOOD LIST </h1> {% endblock %}
+{% block title %} FOOD LIST {% endblock %}
+
+{% block content %}
+<h1>FOOD LIST</h1>
+    {% for objects in  object %}
+       <li> {{ objects }}, {{objects.grams}}g, {{objects.kcal}}kcal, {{objects.proteins}}g, {{objects.fat}}g, {{objects.carbs}}g </li>
+  {% endfor %}
+{% endblock %}

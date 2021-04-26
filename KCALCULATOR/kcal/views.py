@@ -2,8 +2,6 @@ from .models import Food
 from rest_framework import viewsets
 from .serializer import FoodSerializer
 from django.shortcuts import render
-from django.http import HttpResponse
-from django.template import loader
 
 
 class FoodViewSet(viewsets.ModelViewSet):
@@ -19,5 +17,9 @@ def base(response):
     return render(response, "kcal/base.html", {})
 
 
-def foodlist(response):
-    return render(response, "kcal/foodlist.html", {})
+def Foodlist(request):
+    foodlist=Food.objects.all()
+    context = {
+        'object': foodlist
+    }
+    return render(request, "kcal/foodlist.html", context)
