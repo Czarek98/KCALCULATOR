@@ -1,5 +1,5 @@
 <html lang="en">
-{% extends 'kcal/base.html' %}
+{% extends 'base.html' %}
 {% load static %}
 {% block content %}
 
@@ -37,37 +37,7 @@
 
 <main>
 
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Imię i nazwisko</h1>
 
-        <p class="lead text-muted">
-          Gdy kalorie będą poniżej np. 1800/2200
-        </p>
-          <div class="progress">
-              <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 25%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-          <p class="lead text-muted">
-          Gdy przekroczymy kalorie np. 2500/2200
-        </p>
-          <div class="progress">
-              <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-
-        <p>
-          <a href="#" class="btn btn-primary my-2">Mój profil</a>
-          <a href="#" class="btn btn-secondary my-2">Wyloguj</a>
-        </p>
-
-      </div>
-        <style>
-            .bg-success {
-                background-color: #06c947!important;
-            }
-        </style>
-    </div>
-  </section>
 
   <div class="album py-5 bg-light">
     <div class="container">

@@ -8,17 +8,8 @@ class FoodViewSet(viewsets.ModelViewSet):
     queryset = Food.objects.all()
     serializer_class = FoodSerializer
 
-
-def home(response):
-    return render(response, "kcal/home.html", {})
-
-
-def base(response):
-    return render(response, "kcal/base.html", {})
-
-
 def Foodlist(request):
-    foodlist=Food.objects.all()
+    foodlist = Food.objects.all()
     context = {
         'object': foodlist
     }
