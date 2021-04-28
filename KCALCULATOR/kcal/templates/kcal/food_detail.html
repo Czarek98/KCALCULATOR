@@ -1,1 +1,60 @@
-<h1>{{objects.fat}}</h1>
+<head xmlns:color="http://www.w3.org/1999/xhtml">
+<title>{{object.name}}</title>
+
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+</head>
+<body style="text-align:center">
+<div class="box">
+<h1>{{object.name}}</h1>
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="{{object.grams}} g" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-success" type="button">Button</button>
+  </div>
+</div>
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Kalorie
+    <span class="badge alert-success">{{object.kcal}} kcal</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Białko
+    <span class="badge alert-success">{{object.proteins}} g</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Tłuszcze
+    <span class="badge alert-success">{{object.fat}} g</span>
+  </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+    Węglowodany
+    <span class="badge alert-success">{{object.carbs}} g</span>
+    </li>
+</ul>
+
+</div>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+</body>
+
+<style>
+    .outline-success{
+      background-color: #06c947!important;
+    }
+    .badge{
+      color: white;
+    }
+    .alert-success{
+      background-color: #178754!important;
+    }
+    .box {
+      resize: both;
+      overflow: auto;
+      margin: auto;
+      width: 20%;
+      border: 3px solid #73AD21;
+      padding: 20px;
+    }
+</style>
