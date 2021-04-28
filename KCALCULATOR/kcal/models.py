@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 IsAccepted_STATUS = (
     (
@@ -35,8 +36,4 @@ class Food(models.Model):
     ownerOfFood = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
-        return self.name
-
-
-
-    # food = models.ForeignKey(Food, on_delete=models.CASCADE)
+        return self.name# + ' | ' + self.ownerOfFood
