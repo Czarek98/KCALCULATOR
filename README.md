@@ -3,6 +3,7 @@ Calculator of calories
 
 ## Table of contents
 * [General info](#general-info)
+* [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Setup](#setup)
 
@@ -10,7 +11,32 @@ Calculator of calories
 Web page to manage your daily caloric demand. 
 Add availabale food from list to your daily progress bar. 
 You can post your own food but it needs to be accepted by admin.
-	
+
+## Screenshots
+* Homepage
+
+<div style="display:flex;">
+<img alt="App image" src="/img/homepage.png" width="80%">
+</div>
+
+* Menu
+
+<div style="display:flex;">
+<img alt="App image" src="/img/menu.png" width="80%">
+</div>
+
+* Food list
+
+<div style="display:flex;">
+<img alt="App image" src="/img/foodlist.png" width="80%">
+</div>
+
+* Edit food
+
+<div style="display:flex;">
+<img alt="App image" src="/img/edit food.png" width="80%">
+</div>
+
 ## Technologies
 Project is created with(copy from requirements.txt):
 * Django==3.2
